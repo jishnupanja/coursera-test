@@ -1,186 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
-<style>
-
-/********** Base styles **********/
-* {
-    box-sizing: border-box;
-    font-family: Helvetica;
-}
-
-body {
-    background-color: #d6d6d6;
-}
-
-h1 {
-    text-align: center;
-    color: black;
-}
-
-section {
-    border: 1px solid black;
-    background-color: grey;
-    margin: 10px;
-}
-
-section>h2 {
-    float: right;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    margin: 0;
-    width: 150px;
-    text-align: center;
-    font-style: Times;
-    font-size: 125%;
-    font-weight: bold;
-   padding: 5px;
-}
-p{
-	margin-top: 50px;
-	margin-left: 10px;
-	margin-right: 10px;
-	color: white;
-}
-
-section.lebesgue>h2 {
-    background-color: pink;
-}
-section.yell>h2 {
-    background-color: yellow;
-}
-section.bluu>h2 {
-    background-color: #66ffff;
-}
-#header-nav {
-    background-color: grey;
-    border-radius: 0;
-    border: 0;
-}
-
-#header-nav button {
-    margin-top: 22px;
-}
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #fce29e;
-}
-
-.navbar-collapse {
-    border-top: 0;
-}
-
-.navbar-brand, .navbar-nav li a {
-    line-height: 76px;
-    height: 76px;
-    padding-top: 0;
-}
-
-.navbar-brand h1 {
-    color: white;
-    font-family: 'Abril Fatface', cursive;
-    font-weight: bolder;
-    font-size: 1.8em;
-}
-
-.navbar-brand a:hover {
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #fe9797;
-}
-
-#nav-list {
-    background-color: #e4af34;
-}
-
-#nav-list a {
-    font-weight: bolder;
-    color: #282828;
-    font-size: 1.2em;
-}
-
-#nav-list a:hover {
-    color: #202020;
-    background-color: #fce29e;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #7d1913;
-}
-
-
-
-
-</style>
 </head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+
 <body>
-	<header>
-        <nav id="header-nav" class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="navbar-brand">
-                        <a href="index.html"><h1>Food, LLC</h1></a>
-                    </div>
 
-                    <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
 
-                  <div id="collapsable-nav" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
-                        <li>
-                            <a href="#chicken-tile"><br class="hidden-xs"> Chicken</a>
-                        </li>
-                        <li>
-                            <a href="#beef-tile"><br class="hidden-xs"> Beef</a>
-                        </li>
-                        <li>
-                            <a href="#sushi-tile"><br class="hidden-xs"> Sushi</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-<h1 align="center">Our Menu</h1>
+<nav class="navbar" id="top">
+  <div class="container-fluid">
 
-<div class="row" >
-  <div class="col-lg-4 col-md-6"><section class="lebesgue">
-                <h2>Chicken</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut risus tempus, vestibulum dui eu, aliquam felis. Fusce sagittis ex vitae nulla sollicitudin tincidunt. Sed ipsum sem, auctor at iaculis in, pellentesque non dui. Integer feugiat fringilla tempus. Curabitur blandit elit eget eros malesuada, et mollis purus convallis. Nulla est justo, congue id fermentum quis, rhoncus ut lectus. Phasellus arcu nisi, tincidunt id mattis eu, lobortis sit amet libero.
-                </p>
-            </section></div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
+    </div>
 
-  <div class="col-lg-4 col-md-6"><section class="yell">
-                <h2>Beef</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut risus tempus, vestibulum dui eu, aliquam felis. Fusce sagittis ex vitae nulla sollicitudin tincidunt. Sed ipsum sem, auctor at iaculis in, pellentesque non dui. Integer feugiat fringilla tempus. Curabitur blandit elit eget eros malesuada, et mollis purus convallis. Nulla est justo, congue id fermentum quis, rhoncus ut lectus. Phasellus arcu nisi, tincidunt id mattis eu, lobortis sit amet libero.
-                </p>
-            </section></div>
-  
-  <div class="col-lg-4 col-md-12"><section class="bluu">
-                <h2>Sushi</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut risus tempus, vestibulum dui eu, aliquam felis. Fusce sagittis ex vitae nulla sollicitudin tincidunt. Sed ipsum sem, auctor at iaculis in, pellentesque non dui. Integer feugiat fringilla tempus. Curabitur blandit elit eget eros malesuada, et mollis purus convallis. Nulla est justo, congue id fermentum quis, rhoncus ut lectus. Phasellus arcu nisi, tincidunt id mattis eu, lobortis sit amet libero.
-                </p>
-            </section></div>
-  
+    <div class="collapse" id="myNavbar">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a class="menu-item" href="#">Chicken</a></li>
+        <li><a class="menu-item" href="#">Beef</a></li> 
+        <li><a class="menu-item" href="#">Sushi</a></li> 
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<h1 class="main-title">Our Menu</h1>
+
+
+
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Chicken</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Beef</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Sushi</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
 </div>
- <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
+
 
 </body>
 </html>
